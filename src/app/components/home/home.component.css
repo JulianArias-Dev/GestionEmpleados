@@ -1,0 +1,14 @@
+.home{
+    width: 95%;
+    margin: auto;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.home>h1{
+    font-size: 90px;
+    width: 700px;
+    text-shadow: 7px 4px 7px rgb(10, 10, 10);
+}

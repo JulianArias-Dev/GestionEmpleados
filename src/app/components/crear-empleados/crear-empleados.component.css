@@ -1,0 +1,13 @@
+.botones{
+    margin-top: 8px;
+}
+
+.botones>button{
+    margin: 0px 10px;
+}
+
+.spanError{
+    background-color: red;
+    color: black;
+    padding: 2px 3px;
+}
