@@ -1,22 +1,15 @@
 .background-wrapper {
     position: relative;
-    height: 100vh; /* Ajusta esto según sea necesario */
+    height: 100%; /* Ajusta esto según sea necesario */
     background: url('./assets/background.jpg') no-repeat center center;
     background-size: cover;
-  }
-
-  .background-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
-    z-index: -1;
   }
-
+  
   .content {
+    width: 100%;
     position: relative;
     z-index: 1;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.6); 
   }

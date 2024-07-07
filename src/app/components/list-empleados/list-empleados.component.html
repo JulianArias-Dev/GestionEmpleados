@@ -1,11 +1,11 @@
-<div class="container mt-4">
-    <div class="card">
-        <div class="card-body">
-            <div class="encabezado">
-                <span class="h3">Lista de Empleados</span>
-                <button class="btn btn-dark btn-lg" routerLink="/crear-empleados">Agregar</button>
-            </div>
-            <table *ngIf="empleados.length>0" class="table table-striped mt-5">
+<div class="listaEmpleado">
+    <div class="contenido">
+        <div class="encabezado">
+            <span class="h3">Lista de Empleados</span>
+            <button class="btn btn-dark btn-lg" routerLink="/crear-empleados">Agregar</button>
+        </div>
+        <div class="containTable">
+            <table *ngIf="empleados.length>0" class="list">
                 <thead>
                     <tr>
                         <th>Nombre</th>
@@ -22,8 +22,10 @@
                         <td>{{empleado.documento}}</td>
                         <td>{{empleado.salario | currency}}</td>
                         <td class="options">
-                            <i  [routerLink]="['/editar-empleados/', empleado.id]" class="fa-regular fa-pen-to-square fa-lg text-info mr-2"></i>
-                            <i (click)="eliminarEmpleado(empleado.id)" class="fa-solid fa-trash fa-lg text-danger mf-1"></i>
+                            <i [routerLink]="['/editar-empleados/', empleado.id]"
+                                class="fa-regular fa-pen-to-square fa-lg text-info mr-2"></i>
+                            <i (click)="eliminarEmpleado(empleado.id)"
+                                class="fa-solid fa-trash fa-lg text-danger mf-1"></i>
                         </td>
                     </tr>
                     <tr>

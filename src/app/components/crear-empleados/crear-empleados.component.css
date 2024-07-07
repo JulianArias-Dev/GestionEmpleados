@@ -1,13 +1,88 @@
-.botones{
-    margin-top: 8px;
+.crearEmpleado {
+    background: whitesmoke;
+    width: 40%;
+    height: 100hv;
+    margin: auto;
+    margin-top: 2.5%;
+    padding: 1%;
+    border-radius: 15px;
 }
 
-.botones>button{
+.contendedorFormulario {
+    width: 95%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.botones {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones>button {
     margin: 0px 10px;
 }
 
-.spanError{
+.spanError {
     background-color: red;
     color: black;
     padding: 2px 3px;
+}
+
+.campos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.campos>input {
+    width: 49%;
+}
+
+.campo {
+    width: 100%;
+    margin: 1% 0%;
+}
+
+.campo>input {
+    width: 100%;
+    margin: auto;
+}
+
+input {
+    border: 1px solid #727272;
+    border-radius: 3px;
+    margin: auto;
+    padding: 5px 8px;
+}
+
+@media screen and (max-width:800px) {
+    
+    .crearEmpleado {
+        width: 95%;
+    }
+
+    .campos{
+        flex-direction: column;
+        padding: 0%;
+    }
+    
+    .campos>input{
+       width: 99%;
+       margin: 1%; 
+    }
+
+    .campo{
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    .campo>input{
+        width: 99.5%;
+        margin: auto;
+    }
+
 }

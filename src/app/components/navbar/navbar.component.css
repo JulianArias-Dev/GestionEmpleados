@@ -55,3 +55,72 @@
      color: #153448;
      text-decoration: underline solid #153448;
 }
+.hamburguesa {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: none;
+    z-index: 100;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.hamburguesa>i {
+    font-size: 25px;
+    line-height: 80px;
+}
+
+@media screen and (max-width:800px) {
+    
+    .NavBar{
+        width: 100%;
+    }
+
+    .titulo{
+        padding-top: 1%;
+        flex-basis: 90%;
+    }
+
+    .titulo>h3{
+        font-size: 22px;
+    }
+    
+    .titulo>p{
+        font-size: 13px;
+        line-height: 13px;
+    }
+    
+    .titulo>p>i{
+        margin-right: 4px;
+    }
+
+    .hamburguesa {
+        display: block;
+    }
+
+    .hamburguesa>i {
+        font-size: 25px;
+        line-height: 75px;
+    }
+
+    .enlaces{
+        display: none;
+        position: fixed;
+        background: #153448;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 100% 100%, 100% 48%, 100% 0%);
+    }
+
+    .menudos {
+        display: flex;
+        clip-path: polygon(41% 0%, 100% 0%, 100% 100%, 41% 100%, 23% 51%);
+    }
+
+
+}

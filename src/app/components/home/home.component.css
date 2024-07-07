@@ -9,6 +9,19 @@
 
 .home>h1{
     font-size: 90px;
-    width: 700px;
+    width: 65%;
     text-shadow: 7px 4px 7px rgb(10, 10, 10);
+}
+
+@media screen and (max-width:800px) {
+    
+    .home{
+        width: 98%;
+    }
+    
+    .home>h1{
+        width: 100%;
+        font-size: 55px;
+        text-shadow: 7px 4px 7px rgb(10, 10, 10);
+    } 
 }

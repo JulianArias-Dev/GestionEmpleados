@@ -7,3 +7,81 @@
     cursor: pointer;
     margin: 0px 5px;
 }
+
+.contenido{
+    width: 100%;
+}
+
+.containTable{
+    width: 100%;
+}
+
+.list{
+    margin-top: 1%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #04044076;
+    border-radius: 10px;
+}
+
+thead{
+    background-color: rgb(38, 38, 38);
+    color: white;
+}
+
+th{
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+td{
+    font-size: 17px;
+    padding: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+tr{
+    border-bottom: 1px solid #0404401e;
+}
+
+tr:hover{
+    background-color: #0404401e;
+}
+
+.listaEmpleado{
+    background: whitesmoke;
+    width: 50%;
+    height: 100hv;
+    margin: auto;
+    margin-top: 2.5%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .listaEmpleado{
+        width: 98%;
+    }
+
+    .list{
+        width: auto;
+    }
+
+    th{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    td{
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .containTable{
+        overflow-x: auto;
+    }
+}

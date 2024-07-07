@@ -1,36 +1,30 @@
-<div class="container pt-4">
-    <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h3>{{title}}</h3>
-                    <div *ngIf="loading" class="spinner-border text-success" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                    <span *ngIf="submitted && createEmpleado.invalid" class="spanError">Todos los campos son
-                        obligatorios</span>
-                    <form class="mt-4" [formGroup]="createEmpleado" (ngSubmit)="ejecucion()">
-                        <div class="row">
-                            <div class="col">
-                                <input class="form-control form-control-lg" type="text" formControlName="nombre"
-                                    placeholder="Nombre">
-                            </div>
-                            <div class="col">
-                                <input class="form-control form-control-lg" type="text" formControlName="apellido"
-                                    placeholder="Apellido">
-                            </div>
-                            <input class="form-control form-control-lg mt-3" type="number" formControlName="documento"
-                                placeholder="Documento">
-                            <input class="form-control form-control-lg mt-3" type="number" formControlName="salario"
-                                placeholder="Salario">
-                            <div class="botones">
-                                <button type="button" class="btn btn-secondary btn-lg"
-                                    routerLink="/lista-empleados">Volver</button>
-                                <button type="submit" class="btn btn-dark btn-lg">{{action}}</button>
-                            </div>
-                        </div>
-                    </form>
+<div class=crearEmpleado>
+    <div class="contenedorFormulario">
+        <div>
+            <div>
+                <h3>{{title}}</h3>
+                <div *ngIf="loading" class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
                 </div>
+                <span *ngIf="submitted && createEmpleado.invalid" class="spanError">Todos los campos son
+                    obligatorios</span>
+                <form class="mt-4" [formGroup]="createEmpleado" (ngSubmit)="ejecucion()">
+                    <div class="campos">
+                        <input type="text" formControlName="nombre" placeholder="Nombre">
+                        <input type="text" formControlName="apellido" placeholder="Apellido">
+                    </div>
+                    <div class="campo">
+                        <input type="number" formControlName="documento" placeholder="Documento">
+                    </div>
+                    <div class="campo">
+                        <input type="number" formControlName="salario" placeholder="Salario">
+                    </div>
+                    <div class="botones">
+                        <button type="button" class="btn btn-secondary btn-lg"
+                            routerLink="/lista-empleados">Volver</button>
+                        <button type="submit" class="btn btn-dark btn-lg">{{action}}</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
