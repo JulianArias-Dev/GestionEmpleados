@@ -1,0 +1,7 @@
+{
+  "routes": [
+    "/crear-empleados",
+    "/home",
+    "/lista-empleados"
+  ]
+}
