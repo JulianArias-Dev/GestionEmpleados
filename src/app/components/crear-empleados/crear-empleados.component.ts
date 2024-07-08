@@ -1,6 +1,5 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { EmpleadoService } from '../../services/empleado.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import Swal from 'sweetalert2'
